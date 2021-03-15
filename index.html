@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Final Fantasy Creature Collector, mk. II</title>
+    </head>
+
+    <body>
+
+        <div>  
+            <h1>FINAL FANTASY CREATURE COLLECTOR</h1>
+        </div>
+
+        <div class="rules">
+            <p>At the start of the game, you will be given a random <strong>Goal Number</strong>.</p>
+            <p>There are four <strong>Creature Buttons</strong> below. Each time you click a creature button, it will add a specific, randomized value to your <strong>Current Score</strong>.</p>
+            <p>You win when your <strong>Current Score</strong> matches the <strong>Goal Number</strong>.</p>
+            <p>Each creature's value is a mystery until you click on it, and it resets each time you restart the game.</p>
+            <p>Good luck!</p>
+        </div>
+
+        <div id="statArea">
+            <div class="goal">
+                <div>
+                    <h4>Goal Number: </h4>
+                </div>
+                <div id="goal-text">
+                    <p class="box-text">0</p>
+                </div>
+            </div>
+
+            <div class="winLose">
+                <div>
+                    <p><h6>Wins: </h6></p>
+                </div>
+                <div id="wins-text">
+                    <p class="box-text"></p>
+                </div>
+            </div>
+
+            <div class="winLose">
+                <div>
+                    <p><h6>Losses: </h6></p>
+                </div>
+                <div id="losses-text">
+                    <p class="box-text"></p>
+                </div>
+            </div>
+
+            <div class="score">
+                <div>
+                    <h4>Current Score: </h4>
+                </div>
+                <div id="score-text">
+                    <p class="box-text">0</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-div">
+            
+            <div class="button" id="cactuar" value="cactuarVal" onclick="document.getElementById('cactuarSound').play()">
+            <img class="creature" src="assets/images/cactuar.png" alt="cactuar">
+            <audio id="cactuarSound" src="assets/audio/cactuarSound.mp3"></audio>
+            </div>
+            
+            <div class="button" id="chocobo" value="chocoboVal" onclick="document.getElementById('chocoboSound').play()">
+                <img class="creature" src="assets/images/chocobo.png" alt="chocobo">
+                <audio id="chocoboSound" src="assets/audio/chocoboSound.mp3"></audio>
+            </div>
+
+            <div class="button" id="moogle" value="moogleVal" onclick="document.getElementById('moogleSound').play()">
+                <img class="creature" src="assets/images/moogle.png" alt="moogle">
+                <audio id="moogleSound" src="assets/audio/moogleSound .mp3"></audio>
+            </div>
+            
+            <div class="button" id="moomba" value="moombaVal" onclick="document.getElementById('moombaSound').play()">
+                <img class="creature" src="assets/images/moomba.png" alt="moomba">
+                <audio id="moombaSound" src="assets/audio/moombaSound.mp3"></audio>
+            </div>
+
+        </div>
+    
+    </body>
+
+</html>
